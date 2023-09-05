@@ -1,0 +1,212 @@
+/* color palette
+#020659
+#020873
+#030A8C
+#0D8DF8 
+#2104D9 
+#2699FB
+#590242 
+*/
+
+/* Global Styles */
+
+html {
+  font-family: verdana, geneva, tahoma, sans-serif; 
+  background-color: #020659;
+  
+}
+
+main {
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    max-width: 834px;
+    min-width: 375px;
+    padding: 0 30px;
+}
+
+header {
+    background-image: linear-gradient(to right, #2104D9, black)
+}
+
+footer {
+    background-color:#ffffff;
+}
+
+/* text */
+
+body {
+    font-family: Optima, sans-serif;
+    color:#ffffff;
+}
+
+header h1 {
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+}
+header p{
+    margin-top: 0px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+h1 {
+    font-size: 1.25em;
+    line-height: 2em;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-size: 1em;
+    color: #590242;
+    line-height: 2em;
+}
+
+nav h2 {
+    visibility:hidden;
+    height: 1px;
+}
+
+p, dl, dd {
+    font-size:1em
+}
+
+footer p {
+    font-size: .75em;
+    color:#590242;
+}
+
+/*more trending*/
+
+#playlists section {
+    
+    height: 500px;
+    background-color: #0D8DF8;
+    margin: 0px;
+}
+
+/*curated playlists*/
+
+#curated section {
+    height: 500px;
+    top: 10px;
+}
+
+
+/* custom scroll */
+
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px; 
+}
+
+dl {
+    display: flex;
+}
+
+dt {
+    padding-right: 5px;
+}
+
+audio {
+    position: absolute;
+    bottom:150px;
+    left: 5px;
+}
+
+.more {
+    text-decoration: none;
+    background-color: #590242;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 30px 32px;
+}
+
+.more:hover {
+    background-color: #020659;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#trending ::-webkit-scrollbar {
+    width: 15px;
+}
+
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+
+#trending ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+}
+
+#trending ::-webkit-scrollbar-thumb:hover {
+    background: #020659;
+}
+
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
+}
+
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+}
+
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+
+/* hamburger */
+
+
