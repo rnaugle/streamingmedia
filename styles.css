@@ -88,9 +88,12 @@ footer p {
 }
 
 /*more trending*/
+#playlists {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
-#playlists section {
-    
+#playlists section{
     height: 500px;
     background-color: #0D8DF8;
     margin: 0px;
