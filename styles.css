@@ -31,21 +31,18 @@ body {
     background-color: #ffffff;
 }
 
-
-
+header{
+    background-image: linear-gradient(to right, black, #2104D9);
+}
 
 nav {
-    background-color: linear-gradient(to right, black, #2104D9);
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-    
-} 
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
 
 ul {
-    text-align: center;
-    
+    width: 375px;
 }
 
 footer {
@@ -61,23 +58,25 @@ body {
     color:#ffffff;
 }
 
+header {
+    background-color: #030A8C;
+}
+
 header h1 {
     padding-top: 2px;
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 0px;
+    font-size: 1.25em;
+    line-height: 2em;
 }
-header p{
+
+header p {
     margin-top: 0px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px
-}
-
-h1 {
-    font-size: 1.25em;
-    line-height: 2em;
 }
 
 h1, h2, h3 {
@@ -96,10 +95,17 @@ nav h2 {
     height: 1px;
 }
 
+ul {
+    background-color: #030A8C;
+    color: #ffffff;
+    height: 200px;
+}
+
 li, a {
     text-decoration: none;
-    color: #ffffff;
     list-style: none;
+    color: #ffffff;
+    padding-top: 5px;
 }
 
 .description {
@@ -109,7 +115,9 @@ li, a {
 }
 
 .logo {
-    position: absolute;
+    position:absolute;
+    top: 30px;
+    right: 80px;
     font-size: 2em;
     text-decoration: none;
     color:#ffffff;
@@ -125,18 +133,35 @@ footer p {
     color:#590242;
 }
 
-/*more trending*/
+/*trending*/
+#trending {
+    padding-top:100px;
+}
+
+#trending h2 {
+    padding-left: 10px;
+}
+
+/*your playlists*/
 #playlists {
    padding: 10px;
 }
 
+#playlists h2 {
+    padding-left: 10px;
+}
+
+#playlists div {
+    background-color:#2699FB;
+}
+
 #playlists section{
     height: 300px;
-    background-color:#2699FB;
+    background-color:#0D8DF8;
     margin: 0px;
 }
 
-.blue {
+.playlists-blue {
     background-color: #0D8DF8;
     height:300px;
     width: 200px;   
@@ -151,13 +176,28 @@ footer p {
 #curated {
     padding: 10px;
 }
+
+#curated h2 {
+    padding-left: 10px;
+}
+
+#curated div {
+    background-color:#030A8C;
+}
 #curated section {
     height: 300px;
     
 }
 
+.curated-blue {
+    background-color: #020659;
+    height:300px;
+    width: 200px; 
+}
+
 #curated .scroll div {
     top: 0px;
+    background-color:#030A8C;
 }
 
 
@@ -266,10 +306,13 @@ audio::-webkit-media-controls-enclosure {
 /* hamburger */
 
 ul {
+    text-align: center;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    
 }
+
 label {
     cursor: pointer;
     display: inline-block;
@@ -277,6 +320,7 @@ label {
     position: relative;
     user-select: none;
 }
+
 label span {
     background-color: #ffffff;
     display: block;
@@ -285,6 +329,7 @@ label span {
     transition: background-color .2s ease-out;
     width: 18px;
 }
+
 label span:before, label span:after {
     background: #ffffff;
     content: '';
@@ -294,27 +339,35 @@ label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
+
 label span:before {
     top: 5px;
 }
+
 label span:after {
     top: -5px;
 }
+
 input {
     display: none;
 }
+
 input:checked ~ ul {
     max-height: 500px;
 }
+
 input:checked ~ label span {
     background: transparent;
 }
+
 input:checked ~ label span:before {
     transform: rotate(-45deg);
 }
+
 input:checked ~ label span:after {
     transform: rotate(45deg);
 }
+
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
@@ -324,14 +377,30 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     body {
         width: 834px;
     }
+
     ul {
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: transparent;
+        justify-content: center;
+        width: 834px;
+        padding-top: 10px;
+    }
+    
+    li, a {
+        text-align: center;
+        padding: 0px;
     }
 
+    .logo {
+        position: relative;
+        top: 0px;
+        left: -30px;
+    }
+   
     label span, input {
         display: none;
     }
