@@ -16,9 +16,9 @@
 /* Global Styles */
 
 html {
-  font-family: verdana, geneva, tahoma, sans-serif; 
-  background-color: #020659;
-  box-sizing: border-box;
+    font-family: verdana, geneva, tahoma, sans-serif;
+    background-color: #020659;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
@@ -31,7 +31,7 @@ body {
     background-color: #ffffff;
 }
 
-header{
+header {
     background-image: linear-gradient(to right, black, #2104D9);
 }
 
@@ -46,7 +46,7 @@ ul {
 }
 
 footer {
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 30px;
     text-align: center;
 }
@@ -55,28 +55,31 @@ footer {
 
 body {
     font-family: Optima, sans-serif;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 header {
     background-color: #030A8C;
 }
 
-header h1 {
-    padding-top: 2px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 0px;
+    header h1 {
+        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0px;
+    }
+
+    header p {
+        margin-top: 0px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+h1 {
     font-size: 1.25em;
     line-height: 2em;
-}
-
-header p {
-    margin-top: 0px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px
 }
 
 h1, h2, h3 {
@@ -91,7 +94,7 @@ h2, h3 {
 }
 
 nav h2 {
-    visibility:hidden;
+    visibility: hidden;
     height: 1px;
 }
 
@@ -99,6 +102,7 @@ ul {
     background-color: #030A8C;
     color: #ffffff;
     height: 200px;
+    text-align: center;
 }
 
 li, a {
@@ -115,56 +119,56 @@ li, a {
 }
 
 .logo {
-    position:absolute;
+    position: absolute;
     top: 30px;
     right: 80px;
     font-size: 2em;
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
     font-variant: small-caps;
 }
 
 p, dl, dd {
-    font-size:1em
+    font-size: 1em
 }
 
 footer p {
     font-size: .75em;
-    color:#590242;
+    color: #590242;
 }
 
 /*trending*/
 #trending {
-    padding-top:100px;
+    padding-top: 50px;
 }
 
-#trending h2 {
-    padding-left: 10px;
-}
+    #trending h2 {
+        padding-left: 10px;
+    }
 
 /*your playlists*/
 #playlists {
-   padding: 10px;
+    padding: 10px;
 }
 
-#playlists h2 {
-    padding-left: 10px;
-}
+    #playlists h2 {
+        padding-left: 10px;
+    }
 
-#playlists div {
-    background-color:#2699FB;
-}
+    #playlists div {
+        background-color: #2699FB;
+    }
 
-#playlists section{
-    height: 300px;
-    background-color:#0D8DF8;
-    margin: 0px;
-}
+    #playlists section {
+        height: 300px;
+        background-color: #0D8DF8;
+        margin: 0px;
+    }
 
 .playlists-blue {
     background-color: #0D8DF8;
-    height:300px;
-    width: 200px;   
+    height: 300px;
+    width: 200px;
 }
 
 #playlists .scroll div {
@@ -177,27 +181,27 @@ footer p {
     padding: 10px;
 }
 
-#curated h2 {
-    padding-left: 10px;
-}
+    #curated h2 {
+        padding-left: 10px;
+    }
 
-#curated div {
-    background-color:#030A8C;
-}
-#curated section {
-    height: 300px;
-    
-}
+    #curated div {
+        background-color: #030A8C;
+    }
+
+    #curated section {
+        height: 300px;
+    }
 
 .curated-blue {
     background-color: #020659;
-    height:300px;
-    width: 200px; 
+    height: 300px;
+    width: 200px;
 }
 
 #curated .scroll div {
     top: 0px;
-    background-color:#030A8C;
+    background-color: #030A8C;
 }
 
 
@@ -210,19 +214,19 @@ footer p {
     overflow-y: hidden;
 }
 
-.scroll section {
-    margin: 10px;
-    position: relative;
-}
+    .scroll section {
+        margin: 10px;
+        position: relative;
+    }
 
-.scroll div {
-    position: absolute;
-    top: 251px;
-    background-color: rgba(255,255,255,.75);
-    padding: 5px;
-    height: 50px;
-    width: 350px; 
-}
+    .scroll div {
+        position: absolute;
+        top: 251px;
+        background-color: rgba(255,255,255,.75);
+        padding: 5px;
+        height: 50px;
+        width: 350px;
+    }
 
 dl {
     display: flex;
@@ -234,7 +238,7 @@ dt {
 
 audio {
     position: absolute;
-    bottom:150px;
+    bottom: 150px;
     left: 5px;
 }
 
@@ -250,9 +254,9 @@ audio {
     margin: 10px 0 30px 32px;
 }
 
-.more:hover {
-    background-color: #020659;
-}
+    .more:hover {
+        background-color: #020659;
+    }
 
 audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
@@ -281,15 +285,15 @@ audio::-webkit-media-controls-enclosure {
     border-radius: 5px;
 }
 
-#trending ::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-}
+    #trending ::-webkit-scrollbar-thumb:hover {
+        background: #020659;
+    }
 
 #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
     width: 15px;
 }
 
-#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 15px #020659;
 }
 
@@ -298,9 +302,9 @@ audio::-webkit-media-controls-enclosure {
     border-radius: 5px;
 }
 
-#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
-}
+    #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
 
 
 /* hamburger */
@@ -310,7 +314,6 @@ ul {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
-    
 }
 
 label {
@@ -321,56 +324,56 @@ label {
     user-select: none;
 }
 
-label span {
-    background-color: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
-}
+    label span {
+        background-color: #ffffff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+        width: 18px;
+    }
 
-label span:before, label span:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
+        label span:before, label span:after {
+            background: #ffffff;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
 
-label span:before {
-    top: 5px;
-}
+        label span:before {
+            top: 5px;
+        }
 
-label span:after {
-    top: -5px;
-}
+        label span:after {
+            top: -5px;
+        }
 
 input {
     display: none;
 }
 
-input:checked ~ ul {
-    max-height: 500px;
-}
+    input:checked ~ ul {
+        max-height: 500px;
+    }
 
-input:checked ~ label span {
-    background: transparent;
-}
+    input:checked ~ label span {
+        background: transparent;
+    }
 
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
+        input:checked ~ label span:before {
+            transform: rotate(-45deg);
+        }
 
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
+        input:checked ~ label span:after {
+            transform: rotate(45deg);
+        }
 
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
+    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+        top: 0;
+    }
 
 
 @media screen and (min-width:834px) {
@@ -378,31 +381,39 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         width: 834px;
     }
 
+    nav {
+        width: 834px;
+        text-align: center;
+    }
+
     ul {
+        width: 834px;
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         background-color: transparent;
-        justify-content: center;
-        width: 834px;
-        padding-top: 10px;
     }
-    
-    li, a {
+  
+
+    li {
+
         text-align: center;
+        justify-content: space-between;
+    }
+
+    li a {
         padding: 0px;
     }
 
     .logo {
         position: relative;
         top: 0px;
-        left: -30px;
+        left: 0px;
     }
-   
+
     label span, input {
         display: none;
     }
 }
-
